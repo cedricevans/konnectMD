@@ -46,6 +46,15 @@ const Hero = () => {
               <span className="text-[#4169E1] italic">$0 Visit Fees</span>. $0 Prescription Costs.
             </h1>
 
+            <div className="relative w-full overflow-hidden rounded-[2rem] lg:hidden">
+              <img
+                className="w-full h-64 object-cover"
+                alt="Telehealth consultation"
+                src="https://amscardiology.com/wp-content/uploads/2023/08/shutterstock_1678229836-scaled.jpg"
+              />
+              <div className="absolute inset-0 bg-[#0F1D3A]/10 mix-blend-multiply" />
+            </div>
+
             <p className="text-lg md:text-xl text-[#0F1D3A]/70 leading-relaxed font-light max-w-lg">
               Join KonnectMD for 24/7 affordable virtual healthcare. Access 4000+ board-certified providers and see a 60% reduction in unnecessary doctor office visits.
             </p>
