@@ -1,0 +1,45 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-cream: #F5F9FF;
+    --color-sage: #9BB5FF;
+    --color-terracotta: #4169E1;
+    --color-brown: #0F1D3A;
+    --color-gold: #7EA0FF;
+    --color-sand: #DDEBFF;
+  }
+
+  body {
+    @apply bg-[#F5F9FF] text-[#0F1D3A];
+    font-family: 'Inter', sans-serif; /* Fallback sans for body text */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Elegant serif for headings */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom organic shape utilities */
+.shape-blob {
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: blob-bounce 10s infinite ease-in-out alternate;
+}
+
+@keyframes blob-bounce {
+  0% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 50% 40% 60%; }
+}
+
+.text-gradient-gold {
+  background: linear-gradient(to right, #7EA0FF, #3559C7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
